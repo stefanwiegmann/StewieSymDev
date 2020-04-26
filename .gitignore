@@ -16,4 +16,5 @@
 ###< symfony/phpunit-bridge ###
 
 ###> SYMDEV local ###
+/lib/stefanwiegmann/wiki-bundle
 ###< SYMDEV local ###
