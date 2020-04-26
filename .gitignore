@@ -16,10 +16,5 @@
 ###< symfony/phpunit-bridge ###
 
 ###> SYMDEV local ###
-/lib/*
-!/lib/.gitkeep
-/lib/mindpool/*
-!/lib/mindpool/.gitkeep
-/lib/stefanwiegmann/*
-!/lib/stefanwiegmann/.gitkeep
+
 ###< symfony/phpunit-bridge ###
