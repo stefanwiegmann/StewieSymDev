@@ -17,7 +17,5 @@
 
 ###> SYMDEV local ###
 /lib/*
-!/lib/.gitignore
-!/lib/mindpool/.gitignore
-!/lib/stefanwiegmann/.gitignore
-###< symfony/phpunit-bridge ###
+!/lib/stefanwiegmann/skeleton-bundle/*
+###< SYMDEV local ###
