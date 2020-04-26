@@ -16,6 +16,4 @@
 ###< symfony/phpunit-bridge ###
 
 ###> SYMDEV local ###
-/lib/*
-!/lib/stefanwiegmann/skeleton-bundle/*
 ###< SYMDEV local ###
