@@ -16,5 +16,8 @@
 ###< symfony/phpunit-bridge ###
 
 ###> SYMDEV local ###
-
+/lib/*
+!/lib/.gitignore
+!/lib/mindpool/.gitignore
+!/lib/stefanwiegmann/.gitignore
 ###< symfony/phpunit-bridge ###

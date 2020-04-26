@@ -1,3 +1,6 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+stefanwiegmann_skeleton:
+    resource: "@StefanwiegmannSkeletonBundle/Controller/"
+    type:     annotation
