@@ -50,7 +50,8 @@
     "autoload-dev": {
         "psr-4": {
             "App\\Tests\\": "tests/",
-            "Stefanwiegmann\\SkeletonBundle\\": "lib/stefanwiegmann/skeleton-bundle/"
+            "Stefanwiegmann\\SkeletonBundle\\": "lib/stefanwiegmann/skeleton-bundle/",
+            "Stefanwiegmann\\WikiBundle\\": "lib/stefanwiegmann/wiki-bundle/"
         }
     },
     "replace": {

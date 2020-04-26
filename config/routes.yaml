@@ -4,3 +4,7 @@
 stefanwiegmann_skeleton:
     resource: "@StefanwiegmannSkeletonBundle/Controller/"
     type:     annotation
+
+stefanwiegmann_wiki:
+    resource: "@StefanwiegmannWikiBundle/Controller/"
+    type:     annotation

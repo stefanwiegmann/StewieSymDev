@@ -27,6 +27,7 @@ services:
     # please note that last definitions always *replace* previous ones
 
     # same for classes from /lib
+    # SkeletonBundle
     Stefanwiegmann\SkeletonBundle\:
         resource: '../lib/stefanwiegmann/skeleton-bundle/*'
         exclude: '../lib/stefanwiegmann/skeleton-bundle/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
@@ -35,4 +36,15 @@ services:
     # as action arguments even if you don't extend any base controller class
     Stefanwiegmann\SkeletonBundle\Controller\:
         resource: '../lib/stefanwiegmann/skeleton-bundle/Controller'
+        tags: ['controller.service_arguments']
+
+    # WikiBundle
+    Stefanwiegmann\WikiBundle\:
+        resource: '../lib/stefanwiegmann/wiki-bundle/*'
+        exclude: '../lib/stefanwiegmann/wiki-bundle/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
+
+    # controllers are imported separately to make sure services can be injected
+    # as action arguments even if you don't extend any base controller class
+    Stefanwiegmann\WikiBundle\Controller\:
+        resource: '../lib/stefanwiegmann/wiki-bundle/Controller'
         tags: ['controller.service_arguments']

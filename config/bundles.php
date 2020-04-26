@@ -13,4 +13,5 @@ return [
     Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true, 'test' => true],
     Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
     Stefanwiegmann\SkeletonBundle\StefanwiegmannSkeletonBundle::class => ['all' => true],
+    Stefanwiegmann\WikiBundle\StefanwiegmannWikiBundle::class => ['all' => true],
 ];
