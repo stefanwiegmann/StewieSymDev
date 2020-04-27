@@ -8,7 +8,7 @@ security:
         # used to reload user from session & other features (e.g. switch_user)
         app_user_provider:
             entity:
-                class: Stefanwiegmann\UserBundle\Entity\User
+                class: Stewie\UserBundle\Entity\User
                 property: username
 
     firewalls:
@@ -19,7 +19,7 @@ security:
           anonymous: true
           guard:
               authenticators:
-                  - Stefanwiegmann\UserBundle\Security\LoginFormAuthenticator
+                  - Stewie\UserBundle\Security\LoginFormAuthenticator
           logout:
               path:   sw_user_logout
 
