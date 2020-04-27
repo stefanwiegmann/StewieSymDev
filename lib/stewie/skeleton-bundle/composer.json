@@ -1,5 +1,5 @@
 {
-    "name": "stefanwiegmann/skeletonbundle",
+    "name": "stewie/skeleton-bundle",
     "type": "symfony-bundle",
     "description": "A skeleton bundle for Symfony5 bundle development",
     "authors" : [{
@@ -7,7 +7,7 @@
         "email" : "mail@stefanwiegmann.de"
     }],
     "keywords" : [
-        "user bundle symfony symfony5"
+        "skeleton bundle symfony symfony5"
     ],
     "license" : [
         "MIT"
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Stefanwiegmann\\SkeletonBundle\\": ""
+            "Stewieg\\SkeletonBundle\\": ""
         }
     },
     "extra" : {

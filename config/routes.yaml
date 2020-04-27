@@ -1,16 +1,16 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
-stefanwiegmann_skeleton:
-    resource: "@StefanwiegmannSkeletonBundle/Controller/"
+stewie_skeleton:
+    resource: "@StewieSkeletonBundle/Controller/"
     type:     annotation
 
-stefanwiegmann_wiki:
-    resource: "@StefanwiegmannWikiBundle/Controller/"
+stewie_wiki:
+    resource: "@StewieWikiBundle/Controller/"
     type:     annotation
 
-stefanwiegmann_user:
-    resource: "@StefanwiegmannUserBundle/Controller/"
+stewie_user:
+    resource: "@StewieUserBundle/Controller/"
     type:     annotation
     prefix:   "{_locale}/"
     defaults:

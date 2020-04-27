@@ -1,5 +1,5 @@
 stefanwiegmann_skeleton:
-    resource: "@StefanwiegmannSkeletonBundle/Controller/"
+    resource: "@StewieSkeletonBundle/Controller/"
     type:     annotation
     # prefix:   "{_locale}/"
     # defaults:

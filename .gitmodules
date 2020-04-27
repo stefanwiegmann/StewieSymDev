@@ -1,6 +1,6 @@
-[submodule "lib/stefanwiegmann/wiki-bundle"]
-	path = lib/stefanwiegmann/wiki-bundle
-	url = git@github.com:stefanwiegmann/StefanwiegmannWikiBundle.git
-[submodule "lib/stefanwiegmann/user-bundle"]
-	path = lib/stefanwiegmann/user-bundle
-	url = git@github.com:stefanwiegmann/StefanwiegmannUserBundle.git
+[submodule "lib/stewie/user-bundle"]
+	path = lib/stewie/user-bundle
+	url = git@github.com:stefanwiegmann/StewieUserBundle.git
+[submodule "lib/stewie/wiki-bundle"]
+	path = lib/stewie/wiki-bundle
+	url = git@github.com:stefanwiegmann/StewieWikiBundle.git
