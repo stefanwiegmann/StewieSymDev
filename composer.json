@@ -1,5 +1,5 @@
 {
-    "name": "stefanwiegmann/StewieSymDev",
+    "name": "stefanwiegmann/stewiesymdev",
     "type": "symfony",
     "description": "A symfony project for Symfony5 bundle development",
     "authors" : [{
