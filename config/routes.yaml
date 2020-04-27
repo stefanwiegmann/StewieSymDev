@@ -8,3 +8,12 @@ stefanwiegmann_skeleton:
 stefanwiegmann_wiki:
     resource: "@StefanwiegmannWikiBundle/Controller/"
     type:     annotation
+
+stefanwiegmann_user:
+    resource: "@StefanwiegmannUserBundle/Controller/"
+    type:     annotation
+    prefix:   "{_locale}/"
+    defaults:
+      _locale: en
+    requirements:
+      _locale: en|de

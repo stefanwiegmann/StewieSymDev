@@ -14,4 +14,10 @@ return [
     Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
     Stefanwiegmann\SkeletonBundle\StefanwiegmannSkeletonBundle::class => ['all' => true],
     Stefanwiegmann\WikiBundle\StefanwiegmannWikiBundle::class => ['all' => true],
+    Stefanwiegmann\UserBundle\StefanwiegmannUserBundle::class => ['all' => true],
+    Liip\ImagineBundle\LiipImagineBundle::class => ['all' => true],
+    Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle::class => ['all' => true],
+    Knp\Bundle\PaginatorBundle\KnpPaginatorBundle::class => ['all' => true],
+    Vich\UploaderBundle\VichUploaderBundle::class => ['all' => true],
+    Translation\Bundle\TranslationBundle::class => ['all' => true],
 ];

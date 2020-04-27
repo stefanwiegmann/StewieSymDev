@@ -16,4 +16,14 @@
 ###< symfony/phpunit-bridge ###
 
 ###> SYMDEV local ###
+/uploads/avatar/group/*
+/uploads/avatar/user/*
+/uploads/avatar/role/*
+!/uploads/avatar/group/.gitkeep
+!/uploads/avatar/user/.gitkeep
+!/uploads/avatar/role/.gitkeep
 ###< SYMDEV local ###
+
+###> liip/imagine-bundle ###
+/public/media/cache/
+###< liip/imagine-bundle ###

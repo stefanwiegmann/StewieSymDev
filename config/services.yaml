@@ -4,6 +4,9 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
+    locale: 'en'
+    max_rows: 10
+    from_email: 'debug@brasstonality.com'
 
 services:
     # default configuration for services in *this* file
@@ -37,6 +40,13 @@ services:
     Stefanwiegmann\SkeletonBundle\Controller\:
         resource: '../lib/stefanwiegmann/skeleton-bundle/Controller'
         tags: ['controller.service_arguments']
+
+    # UserBundle
+    Stefanwiegmann\UserBundle\:
+        resource: '@StefanwiegmannUserBundle/*/*'
+        exclude: '@StefanwiegmannUserBundle/{Entity}'
+        tags: ['controller.service_arguments']
+        autowire: true
 
     # WikiBundle
     # Stefanwiegmann\WikiBundle\:
