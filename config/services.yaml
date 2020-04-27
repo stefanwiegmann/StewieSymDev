@@ -7,6 +7,7 @@ parameters:
     locale: 'en'
     max_rows: 10
     from_email: 'debug@brasstonality.com'
+    register: true
 
 services:
     # default configuration for services in *this* file
@@ -47,6 +48,10 @@ services:
         exclude: '@StewieUserBundle/{Entity}'
         tags: ['controller.service_arguments']
         autowire: true
+
+    # Stewie\UserBundle\Service\AvatarGenerator:
+    #   arguments:
+    #       $uploadPath: '%kernel.project_dir%/uploads/avatar/'
 
     # WikiBundle
     # Stewie\WikiBundle\:

@@ -11,8 +11,8 @@
         <a class="nav-link" href="{{ path('home') }}">Home <span class="sr-only">(current)</span></a>
       </li>
       {% if is_granted('ROLE_USER_USER_VIEW') %}
-        <li class="nav-item {% if app.request.attributes.get('_route') == 'sw_user_list' %} active{% endif %}">
-        <a class="nav-link" href="{{ path('sw_user_list') }}">User <span class="sr-only">(current)</span></a>
+        <li class="nav-item {% if app.request.attributes.get('_route') == 'stewie_user_list' %} active{% endif %}">
+        <a class="nav-link" href="{{ path('stewie_user_list') }}">User <span class="sr-only">(current)</span></a>
       </li>
       {% endif %}
       <li class="nav-item {% if app.request.attributes.get('_route') == 'translation_index' %} active{% endif %}">

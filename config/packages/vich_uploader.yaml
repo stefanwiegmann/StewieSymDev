@@ -5,7 +5,7 @@ vich_uploader:
 
         user_avatar_user:
             uri_prefix: ''
-            upload_destination: '%kernel.project_dir%/uploads/avatar/group'
+            upload_destination: '%kernel.project_dir%/uploads/avatar/user'
             namer: Vich\UploaderBundle\Naming\UniqidNamer
             # namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
 

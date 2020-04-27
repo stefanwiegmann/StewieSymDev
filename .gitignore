@@ -22,6 +22,8 @@
 !/uploads/avatar/group/.gitkeep
 !/uploads/avatar/user/.gitkeep
 !/uploads/avatar/role/.gitkeep
+/src/Migrations/*
+!/src/Migrations/.gitkeep
 ###< SYMDEV local ###
 
 ###> liip/imagine-bundle ###
