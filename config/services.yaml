@@ -7,7 +7,6 @@ parameters:
     locale: 'en'
     max_rows: 10
     from_email: 'debug@brasstonality.com'
-    register: true
 
 services:
     # default configuration for services in *this* file

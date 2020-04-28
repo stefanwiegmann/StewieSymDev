@@ -1,0 +1,81 @@
+stewie_user:
+
+    max_rows: '%max_rows%'
+    from_email: '%from_email%'
+    register: true
+
+    routing:
+        after_login: 'login'
+        after_logout: 'logout'
+
+# settings for dependencies
+twig:
+    globals:
+        stewie_user_register: false
+
+stof_doctrine_extensions:
+    orm:
+        default:
+            sluggable: true
+            timestampable: true
+            loggable: true
+
+vich_uploader:
+
+    mappings:
+
+        user_avatar_user:
+            uri_prefix: ''
+            upload_destination: '%kernel.project_dir%/uploads/avatar/user'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+            # namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
+            inject_on_load: false
+            delete_on_update: true
+            delete_on_remove: true
+
+        user_avatar_group:
+            uri_prefix: ''
+            upload_destination: '%kernel.project_dir%/uploads/avatar/group'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+
+            inject_on_load: false
+            delete_on_update: true
+            delete_on_remove: true
+
+        user_avatar_role:
+            uri_prefix: ''
+            upload_destination: '%kernel.project_dir%/uploads/avatar/role'
+            namer: Vich\UploaderBundle\Naming\UniqidNamer
+
+            inject_on_load: false
+            delete_on_update: true
+            delete_on_remove: true
+
+liip_imagine:
+
+    loaders:
+        default:
+            filesystem:
+                data_root:
+                  - '%kernel.project_dir%/uploads/avatar/user'
+                  - '%kernel.project_dir%/uploads/avatar/group'
+                  - '%kernel.project_dir%/uploads/avatar/role'
+
+    filter_sets:
+
+        user_thumb_filter:
+            filters:
+                thumbnail:
+                    size: [32, 32]
+                    mode: outbound
+        user_medium_filter:
+            filters:
+                thumbnail:
+                    size: [200, 200]
+                    mode: outbound
+        user_large_filter:
+            filters:
+                thumbnail:
+                    size: [400, 400]
+                    mode: outbound

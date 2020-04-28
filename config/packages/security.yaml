@@ -21,7 +21,7 @@ security:
               authenticators:
                   - Stewie\UserBundle\Security\LoginFormAuthenticator
           logout:
-              path:   sw_user_logout
+              path:   stewie_user_logout
 
           switch_user: true
 

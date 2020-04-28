@@ -13,12 +13,12 @@ stof_doctrine_extensions:
     #
     #     # Default file info class implementing FileInfoInterface: Optional. By default we provide a class which is prepared to receive an UploadedFile instance.
     #     default_file_info_class: Stof\DoctrineExtensionsBundle\Uploadable\UploadedFileInfo
-    orm:
-        # default: ~
-    # mongodb:
-    #     default: ~
-        default:
-            sluggable: true
-            timestampable: true
-            loggable: true
+    # orm:
+    #     # default: ~
+    # # mongodb:
+    # #     default: ~
+    #     default:
+    #         sluggable: true
+    #         timestampable: true
+    #         loggable: true
             # timestampable: false # not needed: listeners are not enabled by default
