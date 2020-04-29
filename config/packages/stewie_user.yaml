@@ -11,7 +11,7 @@ stewie_user:
 # settings for dependencies
 twig:
     globals:
-        stewie_user_register: false
+        stewie_user_register: true
 
 stof_doctrine_extensions:
     orm:
