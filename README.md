@@ -1,4 +1,10 @@
-# Dev environment for symfony bundle development
+StewieSymDev
+============
+
+StewieSymDev is a Symfony application for local bundle development. Git submodules under /lib include
+
+- StewieUserBundle
+- StewieWikiBundle
 
 ## Installation
 `git clone git@github.com:stefanwiegmann/dev.git`
@@ -9,7 +15,11 @@
 `php bin/console doctrine:migrations:migrate`
 
 ## Add existing Submodule
-`git submodule add git@github.com:stefanwiegmann/blog.git src/Stefanwiegmann/BlogBundle`
+`git submodule add git@github.com:stefanwiegmann/StewieBlogBundle.git lib/stewie/blog-bundle/`
 
 ## Bootstrap
 Bootstrap is included in the asset folder with version 4.4.1
+
+## License
+
+See the bundled [LICENSE](https://github.com/stefanwiegmann/StewieSymDev/blob/master/LICENSE.txt) file.
