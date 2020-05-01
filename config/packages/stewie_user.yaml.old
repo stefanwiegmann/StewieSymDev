@@ -1,0 +1,9 @@
+stewie_user:
+
+    max_rows: 10 #'%max_rows%'
+    from_email: 'name@domain.com' #'%from_email%'
+    register: true
+
+    routing:
+        after_login: 'login'
+        after_logout: 'logout'

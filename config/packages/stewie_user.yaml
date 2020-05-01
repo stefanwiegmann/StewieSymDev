@@ -1,7 +1,7 @@
 stewie_user:
 
-    max_rows: '%max_rows%'
-    from_email: '%from_email%'
+    max_rows: 10 #'%max_rows%'
+    from_email: 'name@domain.com' #'%from_email%'
     register: true
 
     routing:
