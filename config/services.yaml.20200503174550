@@ -41,25 +41,16 @@ services:
         resource: '../lib/stewie/skeleton-bundle/Controller'
         tags: ['controller.service_arguments']
 
-    # stewie_user
-    Stewie\UserBundle\:
-        resource: '@StewieUserBundle/*/*'
-        exclude: '@StewieUserBundle/{Entity}'
-        tags: ['controller.service_arguments']
-        autowire: true
-    # stewie_user end
-
-    # Stewie\UserBundle\Service\AvatarGenerator:
-    #   arguments:
-    #       $uploadPath: '%kernel.project_dir%/uploads/avatar/'
-
-    # WikiBundle
-    # Stewie\WikiBundle\:
-    #     resource: '../lib/stewie/wiki-bundle/*'
-    #     exclude: '../lib/stewie/wiki-bundle/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
-
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
     Stewie\WikiBundle\Controller\:
         resource: '../lib/stewie/wiki-bundle/Controller'
         tags: ['controller.service_arguments']
+
+  # stewie_user
+    Stewie\UserBundle\Security\:
+        resource: '@StewieUserBundle/Security/*'
+        # exclude: '@StewieUserBundle/{Entity}'
+        tags: ['controller.service_arguments']
+        autowire: true
+  # stewie_user end
