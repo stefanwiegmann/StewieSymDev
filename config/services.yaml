@@ -47,10 +47,20 @@ services:
         resource: '../lib/stewie/wiki-bundle/Controller'
         tags: ['controller.service_arguments']
 
+  # stewie_user
+    # Stewie\UserBundle\Security\:
+    #     resource: '@StewieUserBundle/Security/*'
+    #     # exclude: '@StewieUserBundle/{Entity}'
+    #     tags: ['controller.service_arguments']
+    #     autowire: true
+  # stewie_user end
+
+# <service id="stewie_user.security.loginformauthenticator" class="Stewie\UserBundle\Security\LoginFormAuthenticator"/>
+
     # stewie_user
-    Stewie\UserBundle\:
-        resource: '@StewieUserBundle/*/*'
-        exclude: '@StewieUserBundle/{Entity}'
-        tags: ['controller.service_arguments']
-        autowire: true
+    # Stewie\UserBundle\:
+    #     resource: '@StewieUserBundle/*/*'
+    #     exclude: '@StewieUserBundle/{Entity}'
+    #     tags: ['controller.service_arguments']
+    #     autowire: true
     # stewie_user end
