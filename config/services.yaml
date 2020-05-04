@@ -52,5 +52,5 @@ services:
         resource: '@StewieUserBundle/*/*'
         exclude: '@StewieUserBundle/{Entity}'
         tags: ['controller.service_arguments']
-        autowire: true
+        # autowire: true
 ###< stewie/user-bundle ###
