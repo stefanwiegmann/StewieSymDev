@@ -1,7 +1,6 @@
 stewie_user:
 
     max_rows: 10 #'%max_rows%'
-    set_from: true #true
     from_email: 'name@domain.com' #'%from_email%'
     from_name: 'name' #'%from_name%'
     register: true
