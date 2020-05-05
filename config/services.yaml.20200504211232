@@ -29,6 +29,18 @@ services:
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
+    # same for classes from /lib
+    # SkeletonBundle
+    Stewie\SkeletonBundle\:
+        resource: '../lib/stewie/skeleton-bundle/*'
+        exclude: '../lib/stewie/skeleton-bundle/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
+
+    # controllers are imported separately to make sure services can be injected
+    # as action arguments even if you don't extend any base controller class
+    Stewie\SkeletonBundle\Controller\:
+        resource: '../lib/stewie/skeleton-bundle/Controller'
+        tags: ['controller.service_arguments']
+
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
     Stewie\WikiBundle\Controller\:
@@ -42,11 +54,3 @@ services:
         tags: ['controller.service_arguments']
         # autowire: true
 ###< stewie/user-bundle ###
-
-###> stewie/skeleton-bundle ###
-    Stewie\SkeletonBundle\:
-        resource: '@StewieSkeletonBundle/*/*'
-        exclude: '@StewieSkeletonBundle/{Entity}'
-        tags: ['controller.service_arguments']
-        autowire: true
-###< stewie/skeleton-bundle ###

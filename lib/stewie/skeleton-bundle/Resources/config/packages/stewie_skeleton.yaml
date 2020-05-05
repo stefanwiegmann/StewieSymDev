@@ -1,0 +1,4 @@
+stewie_skeleton:
+
+    max_rows: 10 #'%max_rows%'
+    from_email: 'name@domain.com' #'%from_email%'

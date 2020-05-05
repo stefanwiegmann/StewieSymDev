@@ -9,7 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class DefaultController extends AbstractController
 {
     /**
-    * @Route("/skeleton", name="skeleton_home")
+    * @Route("/", name="skeleton_home")
     */
     public function home()
     {

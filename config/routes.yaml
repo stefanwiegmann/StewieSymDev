@@ -1,9 +1,6 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
-stewie_skeleton:
-    resource: "@StewieSkeletonBundle/Controller/"
-    type:     annotation
 
 stewie_wiki:
     resource: "@StewieWikiBundle/Controller/"

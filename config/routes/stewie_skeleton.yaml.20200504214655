@@ -1,7 +1,7 @@
-stefanwiegmann_skeleton:
+stewie_skeleton:
     resource: "@StewieSkeletonBundle/Controller/"
     type:     annotation
-    # prefix:   "{_locale}/"
+    # prefix:   "{_locale}/skeleton/"
     # defaults:
     #   _locale: en
     # requirements:

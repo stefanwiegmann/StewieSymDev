@@ -1,0 +1,7 @@
+###> stewie/skeleton-bundle ###
+    Stewie\SkeletonBundle\:
+        resource: '@StewieSkeletonBundle/*/*'
+        exclude: '@StewieSkeletonBundle/{Entity}'
+        tags: ['controller.service_arguments']
+        autowire: true
+###< stewie/skeleton-bundle ###
