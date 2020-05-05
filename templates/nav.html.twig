@@ -18,6 +18,9 @@
       <li class="nav-item {% if app.request.attributes.get('_route') == 'translation_index' %} active{% endif %}">
         <a class="nav-link" href="{{ path('translation_index') }}">Translation <span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item {% if app.request.attributes.get('_route') == 'stewie_user_register' %} active{% endif %}">
+        <a class="nav-link" href="{{ path('stewie_user_register') }}">Register <span class="sr-only">(current)</span></a>
+      </li>
     </ul>
     <!-- right alligned -->
     <span class="justify-content-end">
