@@ -1,79 +1,89 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-  <div class="container-fluid" id="body">
 
-  {% block nav %}
-    {% embed "nav.html.twig" %}{% endembed %}
-  {% endblock nav %}
+    {% block nav %}
+        {% embed "nav.html.twig" %}{% endembed %}
+    {% endblock nav %}
 
-  {% block flash %}
-    {% embed "flash.html.twig" %}{% endembed %}
-  {% endblock flash %}
+    {% block alert %}
+        {% embed "alert.html.twig" %}{% endembed %}
+    {% endblock alert %}
 
-  {% block main %}
-    <div class="container-fluid" id="main">
-        <div class="row">
+    <div id="main">
+        {% block main %}
 
-          <div class="col-md-2"><!-- left column -->
+            <div class="row"><!-- main row -->
 
-            {% block menuBlock %}
-              <div class="card" id="menuBlock">
-                <div class="card-header">
-                  {% block menuTitle %}menuTitle{% endblock menuTitle %}
-                </div>
-                <ul class="nav flex-column">
-                  {% block menuContent %}
-                  <li class="nav-item active"><a class="nav-link" href="#">menuContent A</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">menuContent B</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">menuContent C</a></li>
-                  {% endblock menuContent %}
-                </ul>
-              </div>
-            {% endblock menuBlock %}
-            <br>
-              {% block filterBlock %}
-                <div class="card" id="filterBlock">
-                    <div class="card-header">
-                      {% block filterTitle %}filterTitle{% endblock filterTitle %}
+                <div class="col-md-2"><!-- left menu column -->
+
+                    {% block menuBlock %}
+                        <div class="card my-3" id="menuBlock">
+
+                            <div class="card-header">
+                                {% block menuTitle %}menuTitle{% endblock menuTitle %}
+                            </div>
+
+                            <ul class="nav flex-column">
+                                {% block menuContent %}
+                                    <li class="nav-item active"><a class="nav-link" href="#">menuContent A</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">menuContent B</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">menuContent C</a></li>
+                                {% endblock menuContent %}
+                            </ul>
+
+                        </div><!-- menuBlock -->
+                    {% endblock menuBlock %}
+
+                    {% block filterBlock %}
+                        <div class="card my-3" id="filterBlock">
+
+                            <div class="card-header">
+                                {% block filterTitle %}filterTitle{% endblock filterTitle %}
+                            </div>
+
+                            <div class="card-body">
+                                {% block filterContent %}filterContent{% endblock filterContent %}
+                            </div>
+
+                        </div><!-- filterBlock -->
+                    {% endblock filterBlock %}
+
+                </div><!-- left menu column -->
+
+                <div class="col-md-10"><!-- right content column -->
+
+                    {% block pageHeader %}
+                        <div class="row" id="pageHeader">
+
+                            <!-- page title column -->
+                            <div class="col-md-6">
+                                <div class="h1">
+                                    {% block pageTitle %}pageTitle{% endblock pageTitle %}
+                                </div>
+                            </div>
+
+                            <!-- page menu column -->
+                            <div class="col-md-6 text-right">
+                                {% block pageMenu %}pageMenu{% endblock pageMenu %}
+                            </div>
+
+                        </div><!-- pageHeader -->
+                    {% endblock pageHeader %}
+
+                    <div class="container-fluid" id="content">
+                        {% block content %}content{% endblock content %}
                     </div>
-                    <div class="card-body">
-                      {% block filterContent %}filterContent{% endblock filterContent %}
-                    </div>
-                </div>
-              {% endblock filterBlock %}
 
-          </div><!-- left column -->
+                </div><!-- right content column -->
 
-          <div class="col-md-10"><!-- right column -->
-              <div class="row" id="pageHeader">
-                  {% block pageHeader %}
-                    <!-- title column -->
-                    <div class="col-md-6">
-                      <div class="h1">
-                        {% block pageTitle %}pageTitle{% endblock pageTitle %}
-                      </div>
-                    </div>
-                    <!-- menu column -->
-                    <div class="col-md-6 text-right">
-                      {% block pageMenu %}pageMenu{% endblock pageMenu %}
-                    </div>
-                  {% endblock pageHeader %}
-              </div>
+            </div><!-- main row -->
 
-              <div class="container-fluid" id="content">
-                {% block content %}content{% endblock content %}
-              </div>
-
-          </div><!-- right column -->
-
-        </div><!-- row -->
+        {% endblock main %}
     </div><!-- main -->
-  {% endblock main %}
 
-  {% block footer %}
-    {% embed "footer.html.twig" %}{% endembed %}
-  {% endblock footer %}
+    {% block footer %}
+        {% embed "footer.html.twig" %}{% endembed %}
+    {% endblock footer %}
 
-</div><!-- body -->
 {% endblock body %}

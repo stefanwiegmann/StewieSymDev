@@ -13,9 +13,17 @@ class DefaultController extends AbstractController
     */
     public function home()
     {
-      return $this->render('default/home.html.twig', [
-          'headline' => 'symdev headline',
-          'content' => 'symdev content',
-      ]);
+        return $this->render('default/home.html.twig', [
+            'headline' => 'symdev headline',
+            'content' => 'symdev content',
+        ]);
+    }
+
+    /**
+    * @Route("/fonts", name="fonts")
+    */
+    public function fonts()
+    {
+        return $this->render('default/fonts.html.twig');
     }
 }
