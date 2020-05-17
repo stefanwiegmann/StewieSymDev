@@ -18,7 +18,7 @@ StewieSymDev is a Symfony application for local bundle development. Git submodul
 `git submodule add git@github.com:stefanwiegmann/StewieBlogBundle.git lib/stewie/blog-bundle/`
 
 ## Bootstrap
-Bootstrap is included in the asset folder with version 4.4.1
+Bootstrap is included in the asset folder with version 4.5.0
 
 ## License
 
