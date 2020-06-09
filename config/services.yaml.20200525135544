@@ -45,7 +45,6 @@ services:
         autowire: true
 ###< stewie/skeleton-bundle ###
 
-
 ###> stewie/wiki-bundle ###
     Stewie\WikiBundle\:
         resource: '@StewieWikiBundle/*/*'
@@ -53,4 +52,3 @@ services:
         tags: ['controller.service_arguments']
         autowire: true
 ###< stewie/wiki-bundle ###
-

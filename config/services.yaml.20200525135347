@@ -29,6 +29,12 @@ services:
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
+    # controllers are imported separately to make sure services can be injected
+    # as action arguments even if you don't extend any base controller class
+    # Stewie\WikiBundle\Controller\:
+    #     resource: '../lib/stewie/wiki-bundle/Controller'
+    #     tags: ['controller.service_arguments']
+
 ###> stewie/user-bundle ###
     Stewie\UserBundle\:
         resource: '@StewieUserBundle/*/*'
@@ -44,13 +50,3 @@ services:
         tags: ['controller.service_arguments']
         autowire: true
 ###< stewie/skeleton-bundle ###
-
-
-###> stewie/wiki-bundle ###
-    Stewie\WikiBundle\:
-        resource: '@StewieWikiBundle/*/*'
-        exclude: '@StewieWikiBundle/{Entity}'
-        tags: ['controller.service_arguments']
-        autowire: true
-###< stewie/wiki-bundle ###
-
