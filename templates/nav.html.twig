@@ -15,6 +15,9 @@
         <a class="nav-link" href="{{ path('stewie_user_list') }}">User <span class="sr-only">(current)</span></a>
       </li>
       {% endif %}
+      <li class="nav-item {% if app.request.attributes.get('_route') == 'stewie_wiki_home' %} active{% endif %}">
+        <a class="nav-link" href="{{ path('stewie_wiki_home') }}">Wiki <span class="sr-only">(current)</span></a>
+      </li>
       <li class="nav-item {% if app.request.attributes.get('_route') == 'translation_index' %} active{% endif %}">
         <a class="nav-link" href="{{ path('translation_index') }}">Translation <span class="sr-only">(current)</span></a>
       </li>
