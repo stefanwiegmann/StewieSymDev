@@ -4,9 +4,9 @@ translation:
     #     enabled: false
     #     config_name: app
     #
-    # auto_add_missing_translations:
-    #     enabled: true
-    #     config_name: "user-bundle"
+    auto_add_missing_translations:
+        enabled: true
+        config_name: "wiki"
 
     webui:
         enabled:              true
@@ -19,6 +19,7 @@ translation:
         # Turn the symfony profiler integration on or off. Defaults to kernel debug mode.
         enabled:              true
         formatter:            null
+
     configs:
         app:
             dirs: ["%kernel.project_dir%/templates"]
@@ -26,9 +27,15 @@ translation:
             excluded_names: ["*TestCase.php", "*Test.php"]
             excluded_dirs: [cache, data, logs]
             output_format: xlf
-        user-bundle:
+        user:
             dirs: ["%kernel.project_dir%/lib/stewie/user-bundle/Resources/translations"]
             output_dir: "%kernel.project_dir%/lib/stewie/user-bundle/Resources/translations"
+            excluded_names: ["*TestCase.php", "*Test.php"]
+            excluded_dirs: [cache, data, logs]
+            output_format: xlf
+        wiki:
+            dirs: ["%kernel.project_dir%/lib/stewie/wiki-bundle/Resources/translations"]
+            output_dir: "%kernel.project_dir%/lib/stewie/wiki-bundle/Resources/translations"
             excluded_names: ["*TestCase.php", "*Test.php"]
             excluded_dirs: [cache, data, logs]
             output_format: xlf
