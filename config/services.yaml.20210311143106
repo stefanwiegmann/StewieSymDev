@@ -29,6 +29,13 @@ services:
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
+###> stewie/user-bundle ###
+    Stewie\UserBundle\:
+        resource: '@StewieUserBundle/*/*'
+        exclude: '@StewieUserBundle/{Entity}'
+        tags: ['controller.service_arguments']
+        # autowire: true
+###< stewie/user-bundle ###
 
 ###> stewie/skeleton-bundle ###
     Stewie\SkeletonBundle\:
@@ -37,17 +44,6 @@ services:
         tags: ['controller.service_arguments']
         autowire: true
 ###< stewie/skeleton-bundle ###
-
-
-
-
-###> stewie/user-bundle ###
-    Stewie\UserBundle\:
-        resource: '@StewieUserBundle/*/*'
-        exclude: '@StewieUserBundle/{Entity}'
-        tags: ['controller.service_arguments']
-        autowire: true
-###< stewie/user-bundle ###
 
 
 ###> stewie/wiki-bundle ###

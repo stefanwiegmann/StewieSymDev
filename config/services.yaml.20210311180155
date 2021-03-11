@@ -39,6 +39,13 @@ services:
 ###< stewie/skeleton-bundle ###
 
 
+###> stewie/wiki-bundle ###
+    Stewie\WikiBundle\:
+        resource: '@StewieWikiBundle/*/*'
+        exclude: '@StewieWikiBundle/{Entity}'
+        tags: ['controller.service_arguments']
+        autowire: true
+###< stewie/wiki-bundle ###
 
 
 ###> stewie/user-bundle ###
@@ -48,13 +55,4 @@ services:
         tags: ['controller.service_arguments']
         autowire: true
 ###< stewie/user-bundle ###
-
-
-###> stewie/wiki-bundle ###
-    Stewie\WikiBundle\:
-        resource: '@StewieWikiBundle/*/*'
-        exclude: '@StewieWikiBundle/{Entity}'
-        tags: ['controller.service_arguments']
-        autowire: true
-###< stewie/wiki-bundle ###
 

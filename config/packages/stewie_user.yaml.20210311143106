@@ -10,12 +10,9 @@ stewie_user:
         after_logout: 'logout'
 
 # settings for dependencies
-twig:
-    # debug: '%kernel.debug%'
-    # strict_variables: '%kernel.debug%'
-    form_themes: ['bootstrap_4_layout.html.twig']
-    globals:
-        stewie_user_register: true
+# twig:
+#     globals:
+#         stewie_user_register: true
 
 stof_doctrine_extensions:
     orm:
