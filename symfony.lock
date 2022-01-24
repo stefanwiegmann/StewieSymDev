@@ -202,6 +202,9 @@
     "phpspec/prophecy": {
         "version": "1.13.0"
     },
+    "phpstan/phpdoc-parser": {
+        "version": "1.2.0"
+    },
     "phpunit/php-code-coverage": {
         "version": "9.2.6"
     },
@@ -361,9 +364,6 @@
             "config/packages/dev/debug.yaml"
         ]
     },
-    "symfony/debug-pack": {
-        "version": "v1.0.8"
-    },
     "symfony/dependency-injection": {
         "version": "v5.0.7"
     },
@@ -506,9 +506,6 @@
     "symfony/options-resolver": {
         "version": "v5.0.7"
     },
-    "symfony/orm-pack": {
-        "version": "v1.0.8"
-    },
     "symfony/password-hasher": {
         "version": "v5.3.4"
     },
@@ -553,9 +550,6 @@
     },
     "symfony/process": {
         "version": "v5.0.7"
-    },
-    "symfony/profiler-pack": {
-        "version": "v1.0.4"
     },
     "symfony/property-access": {
         "version": "v5.0.7"
@@ -607,9 +601,6 @@
     "symfony/serializer": {
         "version": "v5.0.7"
     },
-    "symfony/serializer-pack": {
-        "version": "v1.0.3"
-    },
     "symfony/service-contracts": {
         "version": "v2.0.1"
     },
@@ -621,9 +612,6 @@
     },
     "symfony/templating": {
         "version": "v5.0.7"
-    },
-    "symfony/test-pack": {
-        "version": "v1.0.6"
     },
     "symfony/translation": {
         "version": "3.3",
@@ -657,9 +645,6 @@
             "config/packages/twig.yaml",
             "templates/base.html.twig"
         ]
-    },
-    "symfony/twig-pack": {
-        "version": "v1.0.0"
     },
     "symfony/validator": {
         "version": "4.3",
