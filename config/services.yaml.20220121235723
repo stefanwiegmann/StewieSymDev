@@ -41,10 +41,6 @@ services:
 
 
 
-
-
-
-
 ###> stewie/user-bundle ###
     Stewie\UserBundle\:
         resource: '@StewieUserBundle/*/*'
