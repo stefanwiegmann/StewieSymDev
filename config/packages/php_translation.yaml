@@ -6,7 +6,7 @@ translation:
     #
     auto_add_missing_translations:
         enabled: true
-        config_name: "wiki"
+        config_name: "user"
 
     webui:
         enabled:              true
