@@ -43,10 +43,6 @@ services:
 
 
 
-
-
-
-
 ###> stewie/wiki-bundle ###
     Stewie\WikiBundle\:
         resource: '@StewieWikiBundle/*/*'
