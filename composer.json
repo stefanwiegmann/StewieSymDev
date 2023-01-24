@@ -12,6 +12,13 @@
     "license" : [
         "MIT"
     ],
+    "repositories": [{
+        "type": "path",
+        "url": "./lib/stewie/user-bundle",
+        "options": {
+            "symlink": true
+        }
+    }],
     "homepage": "https://github.com/stefanwiegmann/StewieSymDev",
     "require": {
         "php": "^7.2.5|^8.0.9",
