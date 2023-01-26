@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg bg-light">
     
     <div class="container-fluid">
 
@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
 
             <!-- left alligned -->
-            <ul class="navbar-nav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <li class="nav-item {% if app.request.attributes.get('_route') == 'home' %} active{% endif %}">
                     <a class="nav-link" href="{{ path('home') }}">Home </a>
@@ -38,9 +38,9 @@
             </ul>
 
             <!-- right alligned -->
-            <span class="d-flex">
+            <div class="d-flex">
                 {% embed "@StewieUser/default/usermenu.html.twig" %}{% endembed %}
-            </span>
+            </div>
 
         </div>
 
